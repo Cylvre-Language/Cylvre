@@ -1,4 +1,4 @@
-**NOTE:** *As of now, CYLVRE is still pre-alpha due to a few issues with the compiler. These issues will be resolved soon. If you still wish to contribute or help with these issues, feel free to follow the instructions provided in this README*
+**NOTE:** *As of now, CYLVRE is still pre-alpha due to a few issues with the compiler. These issues will be resolved soon. If you still wish to contribute or help with these issues, feel free to follow the instructions provided in this README. If you wish to know what works currently, see [Features.md](https://github.com/Cylvre-Language/Cylvre/blob/main/Features.md)*
 
 # Cylvre - The JVM language
 Hi There! Welcome to Cylvre!
@@ -16,8 +16,12 @@ Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual
 - Clone this repository
 - run `gradle build` to build it and `gradle jar` to package it into an executable jar.
 
-#### Run Cylvre Programs
+### Run Cylvre Programs
+#### Compile
 `java -classpath <path to jar file> CylvreCompiler.compiler.Forge <path to Cylvre file>`
+
+#### Execute
+`java <class file name>`
 
 The jar file will be located in the `libs` directory located in the `build` folder.
 
