@@ -27,3 +27,6 @@ The jar file will be located in the `libs` directory located in the `build` fold
 
 ## Contributing
 Contributions are highly valued and extremely welcome! Please see [CONTRIBUTING.md](https://github.com/Cylvre-Language/Cylvre/blob/main/CONTRIBUTING.md) for more details.
+
+### Have any Questions?
+Feel free to ask them in the Q&A Discussion [here](https://github.com/Cylvre-Language/Cylvre/discussions/3).
