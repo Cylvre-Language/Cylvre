@@ -11,7 +11,7 @@
 ```java
 /* ':' is used to free up '=' for conditional statements */
 x : 10;  //integer (implicit definition) 
-float y : 12.345 * 3.1415 //float (explicit definition) 
+float y : 12.345 * 3.1415; //float (explicit definition) 
 ```
 
 - Printing (Although String concatenation is unavailable)
@@ -38,6 +38,6 @@ for x (0 to ten) println(x);
 ```
 
 - Autocasting for variables
-- Curly braces can be omitted for loops and conditionals if only one statement is present.
+- Curly braces can be omitted for loops and conditionals if only one statement is present (excluding functions).
 
 **_Comments haven't been added yet. Will be added very soon_**
