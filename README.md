@@ -2,6 +2,8 @@
 
 # Cylvre - The JVM language
 
+[![Gitter](https://badges.gitter.im/Cylvre/community.svg)](https://gitter.im/Cylvre/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 <p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="auto"></img></p>
 
 Hi There! Welcome to Cylvre!
