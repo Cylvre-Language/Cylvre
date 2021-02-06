@@ -2,7 +2,7 @@
 
 # Cylvre - The JVM language
 
-<p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="390px"></img></p>
+<p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="370px"></img></p>
 
 Hi There! Welcome to Cylvre!
 
