@@ -1,6 +1,8 @@
 # Contributing to Cylvre
 
-First of all, thanks for contributing to Cylvre! It is the dedictaion of people like you that make this project useful for everyone else. As of now, there are a lot of issues with the compiler as it is still pre-alpha. There are only a few ways to contribute to this project and more ways will be added soon. 
+First of all, thanks for contributing to Cylvre! :partying_face: 
+
+It is the dedictaion of people like you that make this project useful for everyone else. As of now, there are a lot of issues with the compiler as it is still pre-alpha. There are only a few ways to contribute to this project and more ways will be added soon. 
 
 ### Ways to contribute.
 
