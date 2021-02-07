@@ -41,5 +41,12 @@ _Replace '^' with appropriate info._
 ## Contributing
 Contributions are highly valued and extremely welcome! Please see [CONTRIBUTING.md](https://github.com/Cylvre-Language/Cylvre/blob/main/CONTRIBUTING.md) for more details.
 
+## Versioning
+- Before v0.1.0 (pre-alpha)
+- v0.1.0 to v0.5.0 (alpha)
+- v0.6.0 to v.0.9.0 (beta)
+
+Cylvre will follow the SemVer system of versioning which implies that versions are released in the following order: `major.minor.patch`.
+
 ## Have any Questions?
 Feel free to ask them in the Q&A Discussion [here](https://github.com/Cylvre-Language/Cylvre/discussions/3).
