@@ -6,7 +6,7 @@ It is the dedictaion of people like you that make this project useful for everyo
 
 ## Ways to contribute.
 
-- **Star this repository**: By starring this repository, you show that you are interested in this project. It will also help me and other contributors here to know that people like you are truly interested in Cylvre and will drive us to provide better software.
+- **Star this repository**: By starring this repository, you show that this project is valuable to you. By showing your interest, we know that this project is worth taking to the next level to provide better software.
 
 - **Help with issues**: Contribute some code! Help us bring Cylvre to next stages faster by helping us with issues. To show that you want to work on an issue, comment on the issue you wan to work on and submit a pull request once you are done. If this you are a newcomer, try [these](https://github.com/Cylvre-Language/Cylvre/labels/good%20first%20issue) issues that are marked as good first issues. You can then move on to other issues.
    - If any issue is marked with the `in progress` label, then it is being worked on by someone. If it has the label and the issue has been sitting for a long time, you can comment on the issue stating that you have an interest in it. Then, a reviewer will most probably let you work on the issue, considering there are no special circumstances.
@@ -28,10 +28,11 @@ It is the dedictaion of people like you that make this project useful for everyo
   - You have written tests for it and all tests have passed.
   - The additions/deletions you have made don't introduce new errors or warnings.
   - The code you have written is properly commented, explaining what a code snippet does where ever necessary.
+ 
 
 **If no one answers a newly opened issue or pull request for more than 3 days, feel free to follow up.**
 
-**Also, please follow the [CODE OF CONDUCT](https://github.com/Cylvre-Language/Cylvre/blob/main/CODE_OF_CONDUCT.md) while part of this community, let's make this place a joy for contributors!**
+> **Please follow the [CODE OF CONDUCT](https://github.com/Cylvre-Language/Cylvre/blob/main/CODE_OF_CONDUCT.md) while part of this community, let's make this place a joy for contributors!**
 
 ## Conclusions
 Once again, Thank You for contributing.
