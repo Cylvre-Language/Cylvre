@@ -10,7 +10,7 @@ It is the dedictaion of people like you that make this project useful for everyo
 
 - **Help with issues**: Contribute some code! Help us bring Cylvre to next stages faster by helping us with issues. To show that you want to work on an issue, comment on the issue you wan to work on and submit a pull request once you are done. If this you are a newcomer, try [these](https://github.com/Cylvre-Language/Cylvre/labels/good%20first%20issue) issues that are marked as good first issues. You can then move on to other issues.
    - If any issue is marked with the `in progress` label, then it is being worked on by someone. If it has the label and the issue has been sitting for a long time, you can comment on the issue stating that you have an interest in it. Then, a reviewer will most probably let you work on the issue, considering there are no special circumstances.
-   - Also check whether any one has been assigned to an issue, we don't want to waste any hard work.
+   - Also check whether anyone has been assigned to an issue, we don't want to waste any hard work.
 
 - **Testing Cylvre**: OK. Cylvre's compiler already has a lot of issues currently (pre-alpha), but there may be unknown errors lurking in there on errors that hasn't been listed yet. Check [this TODO list](https://github.com/Cylvre-Language/Cylvre/blob/main/TODO.md) of things to implement and checks existing issues also. If the issue you are looking for isn't there, feel free to open a new one or submit a pull request updating the list. 
 
