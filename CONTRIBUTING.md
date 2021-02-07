@@ -14,7 +14,9 @@ It is the dedication of people like you that help this project by submitting iss
 
 - **Testing Cylvre**: OK. Cylvre's compiler already has a lot of issues currently (pre-alpha), but there may be unknown errors lurking in there on errors that hasn't been listed yet. Check [this TODO list](https://github.com/Cylvre-Language/Cylvre/blob/main/TODO.md) of things to implement and checks existing issues also. If the issue you are looking for isn't there, feel free to open a new one or submit a pull request updating the list. 
 
-- **Fixing Typos**: No one can type/write perfectly. Found a typo or broken link? submit a [pull request](https://github.com/Cylvre-Language/Cylvre/pulls) or [create an issue](https://github.com/Cylvre-Language/Cylvre/issues).
+- **Fixing Typos**: No one can type/write perfectly. Found a typo or broken link? submit a quick [pull request](https://github.com/Cylvre-Language/Cylvre/pulls) or [create an issue](https://github.com/Cylvre-Language/Cylvre/issues).
+
+- **Documentation**: Help with the documentation of Cylvre! Submit a PR with docs on a feature, or give suggestions on how to improve [Cylvre Docs](https://sivaxis.gitbook.io/cylvre-docs/) in [this issue](https://github.com/Cylvre-Language/Cylvre/issues/11).
 
 ## Issues and Pull Requests
 - **Issues**: To submit an issue, please use the issue templates provided. If the issue type you are going to submit isn't there as part of the templates, open a blank issue.
