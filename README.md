@@ -1,4 +1,4 @@
-**NOTICE: There was a previous unknown error that caused some of the compiler files to not load. The error has been fixed. Those who downloaded/cloned source code and built the compiler before this message, please delete the previous source code and get the updated one. _This message will only be shown for a week_**
+**NOTICE: There was a previous unknown error that caused some of the compiler files to not load. The error has been fixed. Those who downloaded/cloned source code and built the compiler before this message, please delete the previous source code and get the updated one. Sorry for the inconvenience. _This message will only be shown for a week_**
 
 > **NOTE:** *As of now, Cylvre is still pre-alpha due to a few issues with the compiler. These issues will be resolved soon. If you still wish to contribute or help with these issues, feel free to follow the instructions provided in this README. If you wish to know what works currently, see [Features.md](https://github.com/Cylvre-Language/Cylvre/blob/main/Features.md)*
 
