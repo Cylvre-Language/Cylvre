@@ -18,6 +18,9 @@ float y : 12.345 * 3.1415; //float (explicit definition)
 ```java
 println("Hello, World!");
 println(x); //printing of variable values
+
+print("Hello ");
+print("World."); //print() also added
 ```
 
 - Arithmetics
