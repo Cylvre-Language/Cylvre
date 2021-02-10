@@ -4,3 +4,10 @@ jvm:
  
 git:
   symlinks: true
+  
+branches:
+  only:
+    - main
+    
+script: gradle clean build test check  
+ 
