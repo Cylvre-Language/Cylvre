@@ -18,7 +18,7 @@ Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual
 **Want to read how I created Cylvre? Click [here](https://sivaxis.github.io/Posts/Creating%20Cylvre) for my `github.io` blog post on it.**  
 
 ## Prerequisites
-- JDK 15
+- JDK 8 and above
 - Gradle 6.7 
 - *All other dependencies will be packaged into the jar file by running* `gradle jar`
 
