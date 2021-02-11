@@ -1,4 +1,4 @@
-# TODO before v1.0.0
+# TODO before v0.1.0
 
 ### Fixes
 - [ ] Else statement fix
@@ -10,8 +10,8 @@
 ### FEATURES TO IMPLEMENT RIGHT AWAY (HIGH PRIORITY)
 - [ ] Arrays (in progress)(help needed)
 - [ ] String concatenation mesages for println()
-- [ ] print() for System.out.print()
-- [ ] printlnErr() and printErr() for System.err.println() and System.err.print()
+- [x] print() for System.out.print()
+- [ ] printlnErr() for System.err.println()
 - [ ] import statement to handle Java API referencing (after fix) 
 - [ ] Cylvre CLI to compile and run Cylvre Files (using `forge` and `run`)
 
