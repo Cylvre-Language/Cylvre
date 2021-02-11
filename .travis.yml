@@ -1,8 +1,9 @@
 language: java
 jdk: openjdk11
-  
-sudo: false
- 
+os: 
+  - windows
+  - osx
+  - linux
 git:
   symlinks: true
   
