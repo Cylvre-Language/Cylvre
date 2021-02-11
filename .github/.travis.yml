@@ -1,6 +1,8 @@
 language: java
-jvm:
-  - 1.8
+jdk:
+  - oraclejdk8
+  
+sudo: false
  
 git:
   symlinks: true
@@ -8,6 +10,11 @@ git:
 branches:
   only:
     - main
+    
+cache:
+  directories:
+  - $HOME/.m2
+  - $HOME/.gradle
     
 script: gradle clean build test check  
  
