@@ -1,6 +1,5 @@
 language: java
-jdk:
-  - oraclejdk8
+jdk: oraclejdk8
   
 sudo: false
  
@@ -8,8 +7,7 @@ git:
   symlinks: true
   
 branches:
-  only:
-    - main
+  only: main
     
 cache:
   directories:
