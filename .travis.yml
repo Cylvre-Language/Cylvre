@@ -1,7 +1,6 @@
 language: java
 jdk: openjdk11
 os: 
-  - windows
   - osx
   - linux
 git:
