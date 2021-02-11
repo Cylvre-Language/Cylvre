@@ -1,8 +1,5 @@
 language: java
 jdk: openjdk8
-os:
-  - linux
-  - osx
 git:
   symlinks: true
   
