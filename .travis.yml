@@ -1,8 +1,9 @@
 language: java
-jdk: openjdk15
-os: 
-  - osx
-  - linux
+jdk: 
+  - openjdk11
+  - openjdk8
+  - oraclejdk8
+  - oraclejdk11
 git:
   symlinks: true
   
