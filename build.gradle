@@ -9,6 +9,12 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 jar {
     manifest {
         attributes "Main-Class": "CylvreCompiler.compiler.Forge"
