@@ -43,4 +43,4 @@ for x (0 to ten) println(x);
 - Autocasting for variables
 - Curly braces can be omitted for loops and conditionals if only one statement is present (excluding functions).
 
-**_Comments haven't been added yet. Will be added very soon_**
+**_Comments haven't been added yet._**
