@@ -21,6 +21,8 @@ println(x); //printing of variable values
 
 print("Hello ");
 print("World."); //print() also added
+
+print_err("Error!"); //function for System.err.println() also added
 ```
 
 - Arithmetics
