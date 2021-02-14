@@ -175,6 +175,12 @@ public interface CylvreVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPrintStatement(CylvreParser.PrintStatementContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link CylvreParser#print_errStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrint_errStatement(CylvreParser.Print_errStatementContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code ReturnWithValue}
 	 * labeled alternative in {@link CylvreParser#returnStatement}.
 	 * @param ctx the parse tree

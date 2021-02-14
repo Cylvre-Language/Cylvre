@@ -22,9 +22,11 @@ public class StatementGenerator {
     private final ArrayDeclarationStatementGenerator arrayDeclarationStatementGenerator;
     private final ExpressionGenerator expressionGenerator;
     private final PrintStatementGenerator printStatementGenerator;
+    private final Print_ErrStatementGenerator print_errStatementGenerator;
 
     public StatementGenerator(MethodVisitor methodVisitor, CylvreScopes scope) {
         expressionGenerator = new ExpressionGenerator(methodVisitor, scope);
+        print_errStatementGenerator = new Print_ErrStatementGenerator(expressionGenerator, methodVisitor);
         printLnStatementGenerator = new PrintlnStatementGenerator(expressionGenerator,methodVisitor);
         variableDeclarationStatementGenerator = new VariableDeclarationStatementGenerator(this, expressionGenerator);
         forStatementGenerator = new ForStatementGenerator(methodVisitor);
@@ -119,4 +121,6 @@ public class StatementGenerator {
     public void generate(ArrayDeclaration arrayDeclaration){arrayDeclarationStatementGenerator.generate(arrayDeclaration);}
 
     public void generate(PrintStatement printStatement){printStatementGenerator.generate(printStatement);}
+
+    public void generate(Print_ErrStatement print_errStatement){print_errStatementGenerator.generate(print_errStatement);}
 }

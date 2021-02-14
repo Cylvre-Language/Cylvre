@@ -205,6 +205,13 @@ public class CylvreBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitPrint_errStatement(CylvreParser.Print_errStatementContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitReturnWithValue(CylvreParser.ReturnWithValueContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}

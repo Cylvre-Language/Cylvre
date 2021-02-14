@@ -21,10 +21,12 @@ public class StatementVisitor extends CylvreBaseVisitor<Statement> {
     private final ForStatementVisitor forStatementVisitor;
     private final AssignmentStatementVisitor assignmentStatementVisitor;
     private final PrintStatementVisitor printStatementVisitor;
+    private final Print_ErrStatementVisitor print_errStatementVisitor;
 
     public StatementVisitor(CylvreScopes scope) {
         expressionVisitor = new ExpressionVisitor(scope);
         printLnStatementVisitor = new PrintlnStatementVisitor(expressionVisitor);
+        print_errStatementVisitor = new Print_ErrStatementVisitor(expressionVisitor);
         variableDeclarationStatementVisitor = new VariableDeclarationStatementVisitor(expressionVisitor,scope);
         returnStatementVisitor = new ReturnStatementVisitor(expressionVisitor);
         blockStatementVisitor = new BlockStatementVisitor(scope);
@@ -132,6 +134,11 @@ public class StatementVisitor extends CylvreBaseVisitor<Statement> {
     @Override
     public Statement visitPrintStatement(@NotNull CylvreParser.PrintStatementContext ctx){
         return printStatementVisitor.visitPrintStatement(ctx);
+    }
+
+    @Override
+    public Statement visitPrint_errStatement(@NotNull CylvreParser.Print_errStatementContext ctx){
+        return print_errStatementVisitor.visitPrint_errStatement(ctx);
     }
 
 }

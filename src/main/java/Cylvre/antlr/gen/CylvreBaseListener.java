@@ -339,6 +339,18 @@ public class CylvreBaseListener implements CylvreListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterPrint_errStatement(CylvreParser.Print_errStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPrint_errStatement(CylvreParser.Print_errStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterReturnWithValue(CylvreParser.ReturnWithValueContext ctx) { }
 	/**
 	 * {@inheritDoc}

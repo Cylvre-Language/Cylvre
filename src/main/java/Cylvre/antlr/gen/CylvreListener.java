@@ -283,6 +283,16 @@ public interface CylvreListener extends ParseTreeListener {
 	 */
 	void exitPrintStatement(CylvreParser.PrintStatementContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link CylvreParser#print_errStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrint_errStatement(CylvreParser.Print_errStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CylvreParser#print_errStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrint_errStatement(CylvreParser.Print_errStatementContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code ReturnWithValue}
 	 * labeled alternative in {@link CylvreParser#returnStatement}.
 	 * @param ctx the parse tree
