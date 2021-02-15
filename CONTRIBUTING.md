@@ -2,7 +2,7 @@
 
 First of all, thanks for contributing to Cylvre! :partying_face: 
 
-It is the dedication of people like you that help this project by submitting issues, pull requests etc. As of now, there are a lot of issues with the compiler as it is still pre-alpha. There are still a few ways to contribute to this project. Interested? Read these guidelines to help you on your journey.
+It is the dedication of people like you that help this project by submitting issues, pull requests etc that drive this project and make it better. As of now, there are a lot of issues with the compiler as it is still pre-alpha. There are still a few ways to contribute to this project. Interested? Read these guidelines to help you on your journey.
 
 ## Ways to contribute.
 
