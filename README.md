@@ -22,6 +22,9 @@ Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual
 - Gradle 6.7 
 - *All other dependencies will be packaged into the jar file by running* `gradle jar`
 
+## Documentation
+Want to know more about Cylvre's syntax? CLick the link for the official [Cylvre Docs](https://sivaxis.gitbook.io/cylvre-docs/)!
+
 ## Build and run Cylvre
 
 #### Build
