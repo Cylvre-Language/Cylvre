@@ -1,7 +1,7 @@
 # TODO before v0.1.0
 
 ### Fixes
-- [ ] Else statement fix 
+- [x] Else statement fix (although need to fix bytecode generation issue)
 - [ ] Functions fix 
 - [ ] Java API an other Cylvre files reference fix
 - [ ] field without value declaration fix (check needed)	
