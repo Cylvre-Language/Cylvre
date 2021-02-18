@@ -8,7 +8,8 @@
 - [ ] variable declaration without value fix (related to previous fix)
 
 ### FEATURES TO IMPLEMENT RIGHT AWAY (HIGH PRIORITY)
-- [ ] Arrays (in progress)(help needed)
+- [ ] Arrays (help needed)
+- [ ] Comments
 - [ ] String concatenation messages for println()
 - [x] print() for System.out.print()
 - [x] print_err() for System.err.println()
