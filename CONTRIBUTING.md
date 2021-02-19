@@ -20,6 +20,21 @@ It is the dedication of people like you that help this project by submitting iss
 
 - **Reporting Vulnerabilities**: Found a security vulnerability in the compiler? Report it by opening an issue. Details can be found [here](https://github.com/Cylvre-Language/Cylvre/blob/main/SECURITY.md).
 
+## Code Contribution
+If you are contrbuting code, please make sure you follow the following guidelines.
+- Code is properly indented.
+- For functions with too many parameters, please make sure you pu the parameters on a new line if it crosses a certain limit.
+
+```java
+public String aLotOfParameters(String p1, String p2, String p3, String p4, String p5, String p6,
+                               String p7) 
+{
+   //code goes here                               
+}
+```
+
+**Pull Requests are checked by both TravisCI and CodeQL. Please make sure your pull request passes the checks or your pull request will be closed or you will be asked to modify your pull request.**
+
 ## Issues and Pull Requests
 - **Issues**: To submit an issue, please use the issue templates provided. If the issue type you are going to submit isn't there as part of the templates, open a blank issue.
   - Make sure your issue isn't a duplicate of another existing issue, or the issue has already been resolved by a pull request that hasn't been merged yet.
