@@ -59,7 +59,7 @@ If you wish to report a security vulnerability, refer [SECURITY.md](https://gith
 Cylvre will follow the SemVer system of versioning which implies that versions are released in the following order: `major.minor.patch`.
 
 ## License
-This repository follows the [GNU General Public License v3.0](https://github.com/Cylvre-Language/Cylvre/blob/main/LICENSE).
+This repository follows the [MIT License](https://github.com/Cylvre-Language/Cylvre/blob/main/LICENSE).
 
 ## Have any Questions?
 Feel free to ask them in the Q&A Discussion [here](https://github.com/Cylvre-Language/Cylvre/discussions/3).
