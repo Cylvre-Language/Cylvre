@@ -15,7 +15,7 @@ Hi There! Welcome to Cylvre!
 
 Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual **R**untime **E**nvironments. It is an open-source programming language that focuses on simplicity and ease of use while leveraging the power and vast amount of libraries found on the JVM ecosystem.
 
-**Want to read how I created Cylvre? Click [here](https://sivaxis.github.io/Posts/Creating%20Cylvre) for my `github.io` blog post on it.**  
+**Want to read how I created Cylvre? Click [here](https://codeunstable.github.io/Posts/Creating%20Cylvre) for my `github.io` blog post on it.**  
 
 ## Prerequisites
 - JDK 8 and above
