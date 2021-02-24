@@ -1,7 +1,10 @@
-
-> **NOTE:** *As of now, Cylvre is still pre-alpha due to a few issues with the compiler. These issues will be resolved. New contributors are welcome to help develop this language. (Users and Contributors) Feel free to follow the instructions provided in this README. If you wish to know what works currently, see [Features.md](https://github.com/Cylvre-Language/Cylvre/blob/main/Features.md) for more info*
+> A person who finds an error is a human being,
+> A person who finds a solution for it is a visionary, 
+> A person who does something about it is an entrepreneur and a person who does it in code is a developer.
 
 # Cylvre - The JVM language
+
+<p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="auto"></img></p>
 
 [![Gitter](https://badges.gitter.im/Cylvre/community.svg)](https://gitter.im/Cylvre/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ![](https://img.shields.io/github/license/Cylvre-Language/Cylvre)
@@ -9,13 +12,36 @@
 ![](https://www.travis-ci.com/Cylvre-Language/Cylvre.svg?branch=main)
 <!-- ![](https://img.shields.io/github/stars/Cylvre-Language/Cylvre) -->
 
-<p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="auto"></img></p>
-
 Hi There! Welcome to Cylvre!
 
 Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual **R**untime **E**nvironments. It is an open-source programming language that focuses on simplicity and ease of use while leveraging the power and vast amount of libraries found on the JVM ecosystem.
 
-**Want to read how I created Cylvre? Click [here](https://codeunstable.github.io/Posts/Creating%20Cylvre) for my `github.io` blog post on it.**  
+**Want to read how I created Cylvre? Click [here](https://codeunstable.github.io/Posts/Creating%20Cylvre) for my `github.io` blog post on it.**
+
+### Why another language?
+
+The world didn't need another langauge, I wanted it.
+
+
+> **NOTE:** *As of now, Cylvre is still pre-alpha due to a few issues with the compiler. These issues will be resolved. New contributors are welcome to help develop this language. (Users and Contributors) Feel free to follow the instructions provided in this README. If you wish to know what works currently, see [Features.md](https://github.com/Cylvre-Language/Cylvre/blob/main/Features.md) for more info*
+
+## Examples
+
+Hello World:
+
+```go
+func main(){
+  println("Hello, World!");
+}
+```
+
+A `for` loop with a conditional:
+
+```go
+func main(){
+  for x (0 to 100) x = 100 ? println("Loop ended (although this only works if the loop goes to 100)");
+}
+```
 
 ## Prerequisites
 - JDK 8 and above
