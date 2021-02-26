@@ -14,7 +14,7 @@
 
 Hi There! Welcome to Cylvre!
 
-Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual **R**untime **E**nvironments. It is an open-source programming language that focuses on simplicity and ease of use while leveraging the power and vast amount of libraries found on the JVM ecosystem.
+Cylvre (pronounced **Silver**) stands for **CY**ber **L**anguage for **V**irtual **R**untime **E**nvironments. It is an open-source programming language that focuses on simplicity and ease of use while leveraging the power and vast amount of libraries found on the JVM ecosystem. Currently compiles to Java 8 bytecode.
 
 **Want to read how I created Cylvre? Click [here](https://codeunstable.github.io/Posts/Creating%20Cylvre) for my `github.io` blog post on it.**
 
@@ -44,7 +44,7 @@ func main(){
 ```
 
 ## Prerequisites
-- JDK 8 and above
+- JDK 8 or above
 - Gradle 6.7 
 - *All other dependencies will be packaged into the jar file by running* `gradle jar`
 
