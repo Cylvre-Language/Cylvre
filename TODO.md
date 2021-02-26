@@ -15,7 +15,7 @@
 - [x] print_err() for System.err.println()
 - [ ] import statement to handle Java API referencing (after fix) 
 - [ ] Cylvre CLI to compile and run Cylvre Files (using `forge` and `run`)
-- [ ] readline() for System.in (Console readline())
+- [ ] User Input
 
 ### IMPORTANT FEATURES TO BE IMPLEMENTED IN LATER STAGES
 - [ ] match statement
