@@ -89,7 +89,7 @@ printStatement              : PRINT '('expression')'';' ;
 
 print_errStatement          : PRINT_ERR '(' expression ')'';' ;
 
-scannerStatement            : SCANNER .+? ';';
+scannerStatement            : SCANNER ';';
 
 returnStatement             : RETURN expression #ReturnWithValue
                             | RETURN #ReturnVoid ;
