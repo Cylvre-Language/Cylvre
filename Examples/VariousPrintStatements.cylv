@@ -1,0 +1,8 @@
+func main(){
+  println("Basic Println()");
+  print("Basic"); print("PrintCombo");   println();
+  
+  x : 0;
+  x != 0 ? println("Not Null");
+  x = 0 ? print_err("ERROR: NULL");
+}
