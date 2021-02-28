@@ -1,0 +1,13 @@
+func main(){
+  x : 0;
+  x != 0 ? println("Not Null");
+  
+  y : 10;
+  y / 10 = 1 ? println("Its ten, becuz quotient is 1");
+  
+  for z (0 to 100){
+    z != 100 ? println("Loop going on");
+    z = 100 ? println("Loop ended (becuz counter is 100)");
+  }
+
+}
