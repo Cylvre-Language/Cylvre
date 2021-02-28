@@ -1,5 +1,7 @@
 > A person who finds an error is a human being,
-> A person who finds a solution for it is a visionary, 
+> 
+> A person who finds a solution for it is a visionary,
+>  
 > A person who does something about it is an entrepreneur and a person who does it in code is a developer.
 
 # Cylvre - The JVM language
