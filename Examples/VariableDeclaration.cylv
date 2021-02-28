@@ -1,0 +1,9 @@
+func main(){
+  int x : 10;
+  double pi : 22.0 / 7.0;
+  str string : "A String";
+  
+  println(x);
+  println(pi);
+  println(string);
+}
