@@ -11,4 +11,4 @@ cache:
   - $HOME/.m2
   - $HOME/.gradle
     
-script: gradle clean build test check 
+script: gradle test clean build jar 
