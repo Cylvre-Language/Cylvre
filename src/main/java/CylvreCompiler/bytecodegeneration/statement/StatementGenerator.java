@@ -1,5 +1,6 @@
 package CylvreCompiler.bytecodegeneration.statement;
 
+import CylvreCompiler.bytecodegeneration.FileBytecodeGenerator;
 import CylvreCompiler.bytecodegeneration.expression.ExpressionGenerator;
 import Cylvre.domain.node.expression.*;
 import Cylvre.domain.node.expression.arithmetic.Addition;
@@ -11,7 +12,7 @@ import Cylvre.domain.scope.CylvreScopes;
 import org.objectweb.asm.MethodVisitor;
 
 public class StatementGenerator {
-
+    private final FileBytecodeGenerator fileBytecodeGenerator;
     private final PrintlnStatementGenerator printLnStatementGenerator;
     private final VariableDeclarationStatementGenerator variableDeclarationStatementGenerator;
     private final ReturnStatementGenerator returnStatementGenerator;
@@ -23,8 +24,12 @@ public class StatementGenerator {
     private final ExpressionGenerator expressionGenerator;
     private final PrintStatementGenerator printStatementGenerator;
     private final Print_ErrStatementGenerator print_errStatementGenerator;
+    private final ScannerStatementGenerator scannerStatementGenerator;
 
     public StatementGenerator(MethodVisitor methodVisitor, CylvreScopes scope) {
+        fileBytecodeGenerator = new FileBytecodeGenerator();
+        fileBytecodeGenerator.initializeMethodVisitor(methodVisitor);
+
         expressionGenerator = new ExpressionGenerator(methodVisitor, scope);
         print_errStatementGenerator = new Print_ErrStatementGenerator(expressionGenerator, methodVisitor);
         printLnStatementGenerator = new PrintlnStatementGenerator(expressionGenerator,methodVisitor);
@@ -36,6 +41,7 @@ public class StatementGenerator {
         assignmentStatementGenerator = new AssignmentStatementGenerator(methodVisitor, expressionGenerator,scope);
         arrayDeclarationStatementGenerator = new ArrayDeclarationStatementGenerator(expressionGenerator, methodVisitor, scope);
         printStatementGenerator = new PrintStatementGenerator(expressionGenerator, methodVisitor);
+        scannerStatementGenerator = new ScannerStatementGenerator(methodVisitor);
     }
 
     public void generate(PrintlnStatement printLnStatement) {
@@ -123,4 +129,6 @@ public class StatementGenerator {
     public void generate(PrintStatement printStatement){printStatementGenerator.generate(printStatement);}
 
     public void generate(Print_ErrStatement print_errStatement){print_errStatementGenerator.generate(print_errStatement);}
+
+    public void generate(ScannerStatement scannerStatement){scannerStatementGenerator.generate(scannerStatement);}
 }

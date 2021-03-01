@@ -1,13 +1,14 @@
 package Cylvre.util;
 
-import Cylvre.antlr.gen.CylvreParser;
 import Cylvre.domain.type.BuiltInType;
 import Cylvre.domain.type.ClassType;
 import Cylvre.domain.type.Type;
 import com.google.common.primitives.Doubles;
 import com.google.common.primitives.Floats;
 import com.google.common.primitives.Ints;
+import gen.CylvreParser;
 import org.apache.commons.lang3.StringUtils;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.Optional;
@@ -26,7 +27,7 @@ public final class TypeResolver {
         return new ClassType(typeName);
     }
 
-    public static Type getFromValue(CylvreParser.ValueContext value) {
+    public static Type getFromValue(CylvreParser.@NotNull ValueContext value) {
         String stringValue = value.getText();
         if (StringUtils.isEmpty(stringValue)) return BuiltInType.VOID;
         if (value.NUMBER() != null) {

@@ -1,10 +1,10 @@
 package CylvreCompiler.parsing.visitor.expression;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.node.expression.arithmetic.*;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ArithmeticExpressionVisitor extends CylvreBaseVisitor<ArithmeticExpression> {
     private final ExpressionVisitor expressionVisitor;

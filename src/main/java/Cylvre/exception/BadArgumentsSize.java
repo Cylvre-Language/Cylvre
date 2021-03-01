@@ -1,7 +1,7 @@
 package Cylvre.exception;
 
 
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreParser;
 import Cylvre.domain.scope.FunctionSignature;
 
 import java.util.List;

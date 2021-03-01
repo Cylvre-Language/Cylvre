@@ -13,14 +13,14 @@ import java.util.Optional;
 public class PrimitiveTypesWrapperFactory {
 
     private final static BiMap<BuiltInType, ClassType> types = ImmutableBiMap.of(
-            BuiltInType.INT,ClassType.Integer(),
-            BuiltInType.BOOLEAN,ClassType.Boolean(),
-            BuiltInType.FLOAT,ClassType.Float(),
-            BuiltInType.DOUBLE,ClassType.Double()
+            BuiltInType.INT,ClassType.integer_type(),
+            BuiltInType.BOOLEAN,ClassType.boolean_type(),
+            BuiltInType.FLOAT,ClassType.float_type(),
+            BuiltInType.DOUBLE,ClassType.double_type()
     );
 
     private final static Map<Type,String> toPrimitiveMethodName = ImmutableMap.of(
-            ClassType.Integer(),"intValue"
+            ClassType.integer_type(),"intValue"
     );
 
     public static Optional<BuiltInType> getPrimitiveForWrapper(Type type) {

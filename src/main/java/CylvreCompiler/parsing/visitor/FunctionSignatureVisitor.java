@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.util.TypeResolver;
 import Cylvre.domain.node.expression.Parameter;
 import Cylvre.domain.scope.CylvreScopes;
@@ -9,7 +9,7 @@ import Cylvre.domain.scope.FunctionSignature;
 import Cylvre.domain.type.Type;
 import CylvreCompiler.parsing.visitor.expression.ExpressionVisitor;
 import CylvreCompiler.parsing.visitor.expression.function.ParameterExpressionListVisitor;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.List;

@@ -6,7 +6,7 @@ import Cylvre.domain.scope.Field;
 import Cylvre.domain.type.Type;
 
 public class FieldReference implements Reference {
-    private Field field;
+    private final Field field;
 
     public FieldReference(Field field) {
         this.field = field;

@@ -1,12 +1,12 @@
 package CylvreCompiler.parsing.visitor.statement;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.node.statement.IfStatement;
 import Cylvre.domain.node.statement.Statement;
 import CylvreCompiler.parsing.visitor.expression.ExpressionVisitor;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class IfStatementVisitor extends CylvreBaseVisitor<IfStatement> {
     private final StatementVisitor statementVisitor;

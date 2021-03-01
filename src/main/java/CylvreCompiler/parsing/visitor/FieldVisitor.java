@@ -1,12 +1,12 @@
 package CylvreCompiler.parsing.visitor;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.util.TypeResolver;
 import Cylvre.domain.scope.CylvreScopes;
 import Cylvre.domain.scope.Field;
 import Cylvre.domain.type.Type;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class FieldVisitor extends CylvreBaseVisitor<Field> {
 
@@ -19,8 +19,8 @@ public class FieldVisitor extends CylvreBaseVisitor<Field> {
     @Override
     public Field visitField(@NotNull CylvreParser.FieldContext ctx) {
         Type owner = scope.getClassType();
-        Type type = TypeResolver.getFromTypeContext(new CylvreParser.VariableDeclarationWithAssignmentContext(ctx.variableDeclaration()).type());
-        String name = new CylvreParser.VariableDeclarationWithAssignmentContext(ctx.variableDeclaration()).name().getText();
+        Type type = TypeResolver.getFromTypeContext(ctx.type());
+        String name = ctx.name().getText();
         return new Field(name, owner, type);
     }
 }

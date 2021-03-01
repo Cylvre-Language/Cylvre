@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.Constructor;
 import Cylvre.domain.Function;
 import Cylvre.domain.node.statement.Statement;
@@ -9,7 +9,7 @@ import Cylvre.domain.scope.CylvreScopes;
 import Cylvre.domain.scope.FunctionSignature;
 import Cylvre.domain.scope.LocalVariable;
 import CylvreCompiler.parsing.visitor.statement.StatementVisitor;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class FunctionVisitor extends CylvreBaseVisitor<Function> {
 

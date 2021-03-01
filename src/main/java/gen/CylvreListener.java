@@ -1,4 +1,4 @@
-package Cylvre.antlr.gen;// Generated from C:/Users/user/IdeaProjects/Cylvre/src\Cylvre.g4 by ANTLR 4.9.1
+package gen;// Generated from C:/Users/user/IdeaProjects/Cylvre/src\Cylvre.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -292,6 +292,16 @@ public interface CylvreListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPrint_errStatement(CylvreParser.Print_errStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CylvreParser#scannerStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterScannerStatement(CylvreParser.ScannerStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CylvreParser#scannerStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitScannerStatement(CylvreParser.ScannerStatementContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ReturnWithValue}
 	 * labeled alternative in {@link CylvreParser#returnStatement}.

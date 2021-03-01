@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor.expression;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.ConditionalExpression;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.scope.CylvreScopes;

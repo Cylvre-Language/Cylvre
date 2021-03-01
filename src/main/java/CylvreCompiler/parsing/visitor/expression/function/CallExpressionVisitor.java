@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor.expression.function;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.exception.FunctionNameEqualClassException;
 import Cylvre.domain.node.expression.*;
 import Cylvre.domain.scope.CylvreScopes;

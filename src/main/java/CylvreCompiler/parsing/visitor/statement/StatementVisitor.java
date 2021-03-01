@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor.statement;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.ConditionalExpression;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.node.statement.Statement;
@@ -22,6 +22,7 @@ public class StatementVisitor extends CylvreBaseVisitor<Statement> {
     private final AssignmentStatementVisitor assignmentStatementVisitor;
     private final PrintStatementVisitor printStatementVisitor;
     private final Print_ErrStatementVisitor print_errStatementVisitor;
+    private final ScannerStatementVisitor scannerStatementVisitor;
 
     public StatementVisitor(CylvreScopes scope) {
         expressionVisitor = new ExpressionVisitor(scope);
@@ -34,6 +35,7 @@ public class StatementVisitor extends CylvreBaseVisitor<Statement> {
         forStatementVisitor = new ForStatementVisitor(scope);
         assignmentStatementVisitor = new AssignmentStatementVisitor(expressionVisitor);
         printStatementVisitor = new PrintStatementVisitor(expressionVisitor);
+        scannerStatementVisitor = new ScannerStatementVisitor();
     }
 
     @Override
@@ -139,6 +141,11 @@ public class StatementVisitor extends CylvreBaseVisitor<Statement> {
     @Override
     public Statement visitPrint_errStatement(@NotNull CylvreParser.Print_errStatementContext ctx){
         return print_errStatementVisitor.visitPrint_errStatement(ctx);
+    }
+
+    @Override
+    public Statement visitScannerStatement(@NotNull CylvreParser.ScannerStatementContext ctx){
+        return scannerStatementVisitor.visitScannerStatement(ctx);
     }
 
 }

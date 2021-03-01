@@ -1,4 +1,4 @@
-package Cylvre.antlr.gen;// Generated from C:/Users/user/IdeaProjects/Cylvre/src\Cylvre.g4 by ANTLR 4.9.1
+package gen;// Generated from C:/Users/user/IdeaProjects/Cylvre/src\Cylvre.g4 by ANTLR 4.9.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -346,6 +346,18 @@ public class CylvreBaseListener implements CylvreListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitPrint_errStatement(CylvreParser.Print_errStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterScannerStatement(CylvreParser.ScannerStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitScannerStatement(CylvreParser.ScannerStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

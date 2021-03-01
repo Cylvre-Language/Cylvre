@@ -1,11 +1,11 @@
 package CylvreCompiler.parsing.visitor.expression;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.util.TypeResolver;
 import Cylvre.domain.node.expression.Value;
 import Cylvre.domain.type.Type;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ValueExpressionVisitor extends CylvreBaseVisitor<Value> {
 

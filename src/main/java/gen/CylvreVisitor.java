@@ -1,4 +1,4 @@
-package Cylvre.antlr.gen;// Generated from C:/Users/user/IdeaProjects/Cylvre/src\Cylvre.g4 by ANTLR 4.9.1
+package gen;// Generated from C:/Users/user/IdeaProjects/Cylvre/src\Cylvre.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -180,6 +180,12 @@ public interface CylvreVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitPrint_errStatement(CylvreParser.Print_errStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CylvreParser#scannerStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitScannerStatement(CylvreParser.ScannerStatementContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ReturnWithValue}
 	 * labeled alternative in {@link CylvreParser#returnStatement}.

@@ -1,14 +1,14 @@
 package CylvreCompiler.parsing.visitor.expression;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.FieldReference;
 import Cylvre.domain.node.expression.LocalVariableReference;
 import Cylvre.domain.node.expression.Reference;
 import Cylvre.domain.scope.CylvreScopes;
 import Cylvre.domain.scope.Field;
 import Cylvre.domain.scope.LocalVariable;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class VariableReferenceExpressionVisitor extends CylvreBaseVisitor<Reference> {
     private final CylvreScopes scope;

@@ -1,10 +1,10 @@
 package CylvreCompiler.parsing.visitor.expression.function;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.Parameter;
 import CylvreCompiler.parsing.visitor.expression.ExpressionVisitor;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,13 +1,13 @@
 package CylvreCompiler.parsing.visitor.statement;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.EmptyExpression;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.node.statement.ReturnStatement;
 import Cylvre.domain.type.BuiltInType;
 import CylvreCompiler.parsing.visitor.expression.ExpressionVisitor;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ReturnStatementVisitor extends CylvreBaseVisitor<ReturnStatement> {
     private final ExpressionVisitor expressionVisitor;

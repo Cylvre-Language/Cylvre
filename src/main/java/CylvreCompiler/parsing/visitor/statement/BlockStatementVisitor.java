@@ -1,11 +1,11 @@
 package CylvreCompiler.parsing.visitor.statement;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.statement.Block;
 import Cylvre.domain.node.statement.Statement;
 import Cylvre.domain.scope.CylvreScopes;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.stream.Collectors;

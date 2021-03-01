@@ -50,7 +50,7 @@ public class Forge {
             return ARGUMENT_ERRORS.NO_FILE;
         }
         String filePath = args[0];
-        if (!filePath.endsWith(".cylv")) {
+        if (!filePath.endsWith(".cyl")) {
             return ARGUMENT_ERRORS.BAD_FILE_EXTENSION;
         }
         return ARGUMENT_ERRORS.NONE;
@@ -61,7 +61,7 @@ public class Forge {
     private void saveBytecodeToClassFile(String compiledFileName, CompilationUnit compilationUnit) throws IOException {
         BytecodeGenerator bytecodeGenerator = new BytecodeGenerator(compiledFileName);
         byte[] bytecode = bytecodeGenerator.generate(compilationUnit);
-        String fileName = StringUtils.replace(compiledFileName, ".cylv", ".class");
+        String fileName = StringUtils.replace(compiledFileName, ".cyl", ".class");
         LOGGER.info("Finished Compiling. Saving bytecode to '{}'...", Paths.get(fileName).toAbsolutePath());
         OutputStream os = new FileOutputStream(fileName);
         IOUtils.write(bytecode, os);

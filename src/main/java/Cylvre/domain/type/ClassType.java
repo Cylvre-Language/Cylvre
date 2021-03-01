@@ -20,23 +20,23 @@ public class ClassType implements Type {
         this.name = Optional.ofNullable(shortcuts.get(name)).orElse(name);
     }
 
-    public static ClassType Integer() {
+    public static ClassType integer_type() {
         return new ClassType("java.lang.Integer");
     }
 
-    public static ClassType Double() {
+    public static ClassType double_type() {
         return new ClassType("java.lang.Double");
     }
 
-    public static ClassType Boolean() {
+    public static ClassType boolean_type() {
         return new ClassType("java.lang.Boolean");
     }
 
-    public static ClassType Float() {
+    public static ClassType float_type() {
         return new ClassType("java.lang.Float");
     }
 
-    public static Type String() {
+    public static Type string_type() {
         return new ClassType("java.lang.String");
     }
 

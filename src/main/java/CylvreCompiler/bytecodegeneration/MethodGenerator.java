@@ -35,7 +35,7 @@ public class MethodGenerator {
         StatementGenerator statementScopeGenerator = new StatementGenerator(mv,scope);
         block.accept(statementScopeGenerator);
         appendReturnIfNotExists(function, block,statementScopeGenerator);
-        mv.visitMaxs(1,1);
+        mv.visitMaxs(-1,-1);
         mv.visitEnd();
     }
 

@@ -1,10 +1,10 @@
 package CylvreCompiler.parsing.visitor;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.CompilationUnit;
 import Cylvre.domain.FileDeclaration;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class CompilationUnitVisitor extends CylvreBaseVisitor<CompilationUnit> {
 

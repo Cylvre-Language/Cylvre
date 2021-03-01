@@ -17,7 +17,7 @@ public class ClassGenerator {
         this.classWriter = classWriter;
     }
 
-    public ClassWriter generate(ClassDeclaration classDeclaration) {
+    public void generate(ClassDeclaration classDeclaration) {
         String name = classDeclaration.getName();
         classWriter.visit(CLASS_VERSION, Opcodes.ACC_SUPER, name,null,"java/lang/Object",null);
         List<Function> methods = classDeclaration.getMethods();
@@ -26,8 +26,6 @@ public class ClassGenerator {
         fields.forEach(f -> f.accept(fieldGenerator));
         MethodGenerator methodGenerator = new MethodGenerator(classWriter);
         methods.forEach(f ->f.accept(methodGenerator));
-        classWriter.visitEnd();
-        return classWriter;
     }
 
 

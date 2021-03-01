@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor.statement;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.node.statement.Assignment;
 import Cylvre.domain.node.statement.RangedForStatement;
@@ -10,7 +10,7 @@ import Cylvre.domain.node.statement.VariableDeclaration;
 import Cylvre.domain.scope.CylvreScopes;
 import Cylvre.domain.scope.LocalVariable;
 import CylvreCompiler.parsing.visitor.expression.ExpressionVisitor;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ForStatementVisitor extends CylvreBaseVisitor<RangedForStatement> {
     private final CylvreScopes scope;

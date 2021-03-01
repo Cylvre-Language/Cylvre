@@ -1,7 +1,7 @@
 package CylvreCompiler.parsing.visitor;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.ClassDeclaration;
 import Cylvre.domain.Constructor;
 import Cylvre.domain.Function;
@@ -14,7 +14,7 @@ import Cylvre.domain.scope.CylvreScopes;
 import Cylvre.domain.scope.Field;
 import Cylvre.domain.scope.FunctionSignature;
 import Cylvre.domain.type.BuiltInType;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.Collections;

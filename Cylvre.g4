@@ -16,7 +16,7 @@ className                   : qualifiedName ;
 
 classBody                   : field* function* ;
 
-field                       : variableDeclaration;
+field                       : type name;
 
 function                    : functionDeclaration block ;
 
@@ -61,11 +61,14 @@ block                       : '{' statement* '}' ;
 statement                   : block
                             | variableDeclaration
                             | assignment
+                            | printlnStatement
                             | printStatement
+                            | print_errStatement
                             | forStatement
-                            | returnStatement
-                            | value
                             | ifStatement
+                            | returnStatement
+                            | scannerStatement
+                            | value
                             | expression
                             ;
 
@@ -80,7 +83,13 @@ arrayAssignment             : '['value*']';
 
 assignment                  : name ASSIGN expression;
 
-printStatement              : PRINTLN '(' expression ')' ';' ;
+printlnStatement            : PRINTLN '(' expression ')' ';' ;
+
+printStatement              : PRINT '('expression')'';' ;
+
+print_errStatement          : PRINT_ERR '(' expression ')'';' ;
+
+scannerStatement            : SCANNER ';';
 
 returnStatement             : RETURN expression #ReturnWithValue
                             | RETURN #ReturnVoid ;
@@ -103,7 +112,7 @@ namedArgument               : name '~>' expression ;
 expression                  : variableReference                                         #VarReference
                             | owner=expression '.' functionName '(' argumentList ')'';'    #FunctionCall
                             | functionName '(' argumentList ')'';'                         #FunctionCall
-                            | superCall=SUPER '('argumentList ')'';'                       #Supercall
+                            | superCall=SUPER '('argumentList ')'';'                       #SuperCall
                             | newCall=NEW className '('argumentList ')'';'                 #ConstructorCall
                             | value                                                     #ValueExpr
                             | '('expression '*' expression')'                           #Multiply
@@ -138,6 +147,8 @@ qualifiedName               : ID ('.' ID)*;
 FUNC                        : 'func';
 CLASS                       : 'class';
 PRINTLN                     : 'println' ;
+PRINT                       : 'print' ;
+PRINT_ERR                   : 'print_err';
 FOR                         : 'for';
 RETURN                      : 'return';
 ELSE                        : 'else';
@@ -146,6 +157,7 @@ SUPER                       : 'super';
 NEW                         : 'new';
 TRUE                        : 'true';
 FALSE                       : 'false';
+SCANNER                     : 'scanner';
 
 //Assignment
 ASSIGN                      : ':';
@@ -198,5 +210,6 @@ STRING                      : '"'~('\r' | '\n' | '"')*'"' ;
 //Identifier
 ID                          : [a-zA-Z0-9_]+ ;
 
-//Whitespace
+//Whitespace and Comments
 WS                          : [ \t\r\n]+ -> channel(HIDDEN) ;
+

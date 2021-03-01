@@ -1,13 +1,13 @@
 package CylvreCompiler.parsing.visitor.expression;
 
-import Cylvre.antlr.gen.CylvreBaseVisitor;
-import Cylvre.antlr.gen.CylvreParser;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import Cylvre.domain.CompareSign;
 import Cylvre.domain.node.expression.ConditionalExpression;
 import Cylvre.domain.node.expression.Expression;
 import Cylvre.domain.node.expression.Value;
 import Cylvre.domain.type.BuiltInType;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ConditionalExpressionVisitor extends CylvreBaseVisitor<ConditionalExpression> {
     private final ExpressionVisitor expressionVisitor;
