@@ -1,14 +1,5 @@
 language: java
-jdk: openjdk8
-git:
-  symlinks: true
   
 branches:
   only: main
-    
-cache:
-  directories:
-  - $HOME/.m2
-  - $HOME/.gradle
-    
-script: gradle test clean build jar 
+
