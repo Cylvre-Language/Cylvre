@@ -54,6 +54,8 @@ public String aLotOfParameters(String p1, String p2, String p3, String p4, Strin
 > **Please follow the [CODE OF CONDUCT](https://github.com/Cylvre-Language/Cylvre/blob/main/CODE_OF_CONDUCT.md) while part of this community, let's make this place a joy for contributors!**
 
 ## Conclusions
+If you are a contributor and want to chat with other contributors or with me, feel free to join the #CylvreSmiths (  [![Gitter](https://badges.gitter.im/Cylvre/CylvreSmiths.svg)](https://gitter.im/Cylvre/CylvreSmiths?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  )!
+
 Once again, Thank You for contributing.
 More tips relevant to contributing will be posted here.
 
