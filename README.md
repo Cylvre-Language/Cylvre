@@ -1,5 +1,3 @@
-NOTE: Please don't use the compiler just yet, there is going to be an update today which is most likely some breaking changes to the compiler. 
-
 > A person who finds an error is a human being,
 > 
 > A person who finds a solution for it is a visionary,
