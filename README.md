@@ -91,4 +91,5 @@ This repository follows the [MIT License](https://github.com/Cylvre-Language/Cyl
 
 ## Have any Questions?
 Feel free to ask them in the Q&A Discussion [here](https://github.com/Cylvre-Language/Cylvre/discussions/3).
+If the compiler still doesn't work, notify me using the community gitter channel given underneath the logo in this readme.
 
