@@ -18,10 +18,18 @@ public class PrintlnStatementGenerator {
 
     public void generate(PrintlnStatement printLnStatement) {
         Expression expression = printLnStatement.getExpression();
+        String descriptor;
+        Type type;
         methodVisitor.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
-        expression.accept(expressionGenerator);
-        Type type = expression.getType();
-        String descriptor = "(" + type.getDescriptor() + ")V";
+
+        if (expression != null) {
+            expression.accept(expressionGenerator);
+            type = expression.getType();
+            descriptor = "(" + type.getDescriptor() + ")V";
+        } else {
+            descriptor = "()V";
+        }
+
         methodVisitor.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/io/PrintStream", "println", descriptor);
     }
 }

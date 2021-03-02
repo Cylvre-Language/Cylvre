@@ -255,18 +255,6 @@ public class CylvreBaseListener implements CylvreListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVariableDeclarationWithoutAssignment(CylvreParser.VariableDeclarationWithoutAssignmentContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitVariableDeclarationWithoutAssignment(CylvreParser.VariableDeclarationWithoutAssignmentContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterVariableArrayDeclaration(CylvreParser.VariableArrayDeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}

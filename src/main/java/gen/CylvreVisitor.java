@@ -131,13 +131,6 @@ public interface CylvreVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVariableDeclarationWithAssignment(CylvreParser.VariableDeclarationWithAssignmentContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code VariableDeclarationWithoutAssignment}
-	 * labeled alternative in {@link CylvreParser#variableDeclaration}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitVariableDeclarationWithoutAssignment(CylvreParser.VariableDeclarationWithoutAssignmentContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code VariableArrayDeclaration}
 	 * labeled alternative in {@link CylvreParser#variableDeclaration}.
 	 * @param ctx the parse tree

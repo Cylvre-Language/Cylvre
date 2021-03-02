@@ -8,7 +8,7 @@ compilationUnit             : fileDeclaration EOF ;
 
 fileDeclaration             : fileBody;
 
-fileBody                    : function* statement* classDeclaration*;
+fileBody                    : field* function* statement* classDeclaration*;
 
 classDeclaration            : CLASS className '{' classBody '}' ;
 
@@ -73,7 +73,6 @@ statement                   : block
                             ;
 
 variableDeclaration         : (type)? name ASSIGN expression ';' #VariableDeclarationWithAssignment
-                            | type name ';'#VariableDeclarationWithoutAssignment
                             | arrayDeclaration #VariableArrayDeclaration
                             ;
 

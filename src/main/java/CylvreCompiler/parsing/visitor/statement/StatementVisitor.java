@@ -49,11 +49,6 @@ public class StatementVisitor extends CylvreBaseVisitor<Statement> {
     }
 
     @Override
-    public  Statement visitVariableDeclarationWithoutAssignment(@NotNull CylvreParser.VariableDeclarationWithoutAssignmentContext ctx){
-        return variableDeclarationStatementVisitor.visitVariableDeclarationWithoutAssignment(ctx);
-    }
-
-    @Override
     public Statement visitReturnVoid(@NotNull CylvreParser.ReturnVoidContext ctx) {
         return returnStatementVisitor.visitReturnVoid(ctx);
     }

@@ -1,7 +1,5 @@
 package CylvreCompiler.parsing.visitor;
 
-import gen.CylvreBaseVisitor;
-import gen.CylvreParser;
 import Cylvre.domain.ClassDeclaration;
 import Cylvre.domain.FileDeclaration;
 import Cylvre.domain.Function;
@@ -12,9 +10,12 @@ import Cylvre.domain.node.expression.Parameter;
 import Cylvre.domain.node.statement.Block;
 import Cylvre.domain.node.statement.Statement;
 import Cylvre.domain.scope.CylvreScopes;
+import Cylvre.domain.scope.Field;
 import Cylvre.domain.scope.FunctionSignature;
 import Cylvre.domain.type.BuiltInType;
 import CylvreCompiler.parsing.visitor.statement.StatementVisitor;
+import gen.CylvreBaseVisitor;
+import gen.CylvreParser;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
@@ -22,6 +23,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class FileVisitor extends CylvreBaseVisitor<FileDeclaration> {
     private CylvreScopes scope;
@@ -33,9 +36,14 @@ public class FileVisitor extends CylvreBaseVisitor<FileDeclaration> {
         MetaData metaData = new MetaData(filename, "java/lang/Object");
         scope = new CylvreScopes(metaData);
         StatementVisitor statementVisitor = new StatementVisitor(scope);
+        FieldVisitor fieldVisitor = new FieldVisitor(scope);
         FunctionSignatureVisitor functionSignatureVisitor = new FunctionSignatureVisitor(scope);
         ClassVisitor classVisitor = new ClassVisitor();
         List<CylvreParser.FunctionContext> functionContexts = ctx.fileBody().function();
+        List<Field> fields = ctx.fileBody().field().stream()
+                .map(field -> field.accept(fieldVisitor))
+                .peek(scope::addField)
+                .collect(toList());
         List<Statement> statements = ctx.fileBody().statement()
                 .stream()
                 .map(s -> s.accept(statementVisitor))
@@ -60,7 +68,7 @@ public class FileVisitor extends CylvreBaseVisitor<FileDeclaration> {
             functions.add(GeneratedMainMethod());
         }
 
-        return new FileDeclaration(functions, statements, classDeclarations);
+        return new FileDeclaration(functions, statements, classDeclarations, fields);
     }
 
     private Function GeneratedMainMethod() {

@@ -18,10 +18,18 @@ public class Print_ErrStatementGenerator {
 
     public void generate(Print_ErrStatement print_errStatement) {
         Expression expression = print_errStatement.getExpression();
+        String descriptor;
+        Type type;
         methodVisitor.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/System", "err", "Ljava/io/PrintStream;");
-        expression.accept(expressionGenerator);
-        Type type = expression.getType();
-        String descriptor = "(" + type.getDescriptor() + ")V";
+
+        if (expression != null) {
+            expression.accept(expressionGenerator);
+            type = expression.getType();
+            descriptor = "(" + type.getDescriptor() + ")V";
+        } else {
+            descriptor = "()V";
+        }
+
         methodVisitor.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/io/PrintStream", "println", descriptor);
     }
 }

@@ -4,12 +4,12 @@
 - [x] Else statement fix (although still need to fix bytecode generation issue)
 - [ ] Functions fix 
 - [ ] Java API an other Cylvre files reference fix
-- [ ] field without value declaration fix (check needed)	
+- [x] field without value declaration fix (althogh the main method doesn't generate even if included.)	
 - [ ] variable declaration without value fix (related to previous fix)
 
 ### FEATURES TO IMPLEMENT RIGHT AWAY (HIGH PRIORITY)
-- [ ] Arrays (help needed)
-- [ ] Comments
+- [ ] Arrays (help/research needed)
+- [ ] Comments 
 - [ ] String concatenation messages for println()
 - [x] print() for System.out.print()
 - [x] print_err() for System.err.println()

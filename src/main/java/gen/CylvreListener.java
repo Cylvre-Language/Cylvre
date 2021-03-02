@@ -209,18 +209,6 @@ public interface CylvreListener extends ParseTreeListener {
 	 */
 	void exitVariableDeclarationWithAssignment(CylvreParser.VariableDeclarationWithAssignmentContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code VariableDeclarationWithoutAssignment}
-	 * labeled alternative in {@link CylvreParser#variableDeclaration}.
-	 * @param ctx the parse tree
-	 */
-	void enterVariableDeclarationWithoutAssignment(CylvreParser.VariableDeclarationWithoutAssignmentContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code VariableDeclarationWithoutAssignment}
-	 * labeled alternative in {@link CylvreParser#variableDeclaration}.
-	 * @param ctx the parse tree
-	 */
-	void exitVariableDeclarationWithoutAssignment(CylvreParser.VariableDeclarationWithoutAssignmentContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code VariableArrayDeclaration}
 	 * labeled alternative in {@link CylvreParser#variableDeclaration}.
 	 * @param ctx the parse tree
