@@ -46,7 +46,7 @@ func main(){
 ```
 
 ## Prerequisites
-- JDK 8 or above
+- JDK 8 or above (I used Java 15 to write Java 8 style code for the compiler)
 - Gradle 6.7 
 - *All other dependencies will be packaged into the jar file by running* `gradle jar`
 
