@@ -1,0 +1,16 @@
+func main(){
+	first : 1;
+	second : 2;
+
+	println("----Before Swap----");
+	print("First number: "); println(first);
+	print("Second number: "); println(second);
+
+	int temporary : first;
+	first : second;
+	second : temporary;
+
+	println("----After Swap----");
+	print("First number: "); println(first);
+	print("Second number: "); println(second);
+}
