@@ -89,6 +89,9 @@ Cylvre will follow the SemVer system of versioning which implies that versions a
 ## License
 This repository follows the [MIT License](https://github.com/Cylvre-Language/Cylvre/blob/main/LICENSE).
 
+## Creator and Major Contributors
+- CodeUnstable (Creator)
+
 ## Have any Questions?
 Feel free to ask them in the Q&A Discussion [here](https://github.com/Cylvre-Language/Cylvre/discussions/3).
 
