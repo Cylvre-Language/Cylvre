@@ -33,7 +33,7 @@ public String aLotOfParameters(String p1, String p2, String p3, String p4, Strin
 }
 ```
 
-**Pull Requests are checked by both TravisCI and CodeQL. Please make sure your pull request passes the checks or your pull request will be closed or you will be asked to modify your pull request.**
+**Pull Requests are checked by both TravisCI. Please make sure your pull request passes the checks or your pull request will be closed or you will be asked to modify your pull request.**
 
 ## Issues and Pull Requests
 - **Issues**: To submit an issue, please use the issue templates provided. If the issue type you are going to submit isn't there as part of the templates, open a blank issue.
