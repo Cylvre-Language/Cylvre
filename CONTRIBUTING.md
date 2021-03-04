@@ -41,7 +41,7 @@ public String aLotOfParameters(String p1, String p2, String p3, String p4, Strin
 
 
 - **Pull Requests**: Before you submit a pull request, make sure you check all the points in the following list.
-  - The changes all follow the GPL v3 license.
+  - The changes all follow the MIT license.
   - The changes you have made are not breaking changes. If so, ask me about it [here](https://github.com/Cylvre-Language/Cylvre/discussions/9).
   - The changes work on your system locally.
   - You have written tests for it and all tests have passed.
