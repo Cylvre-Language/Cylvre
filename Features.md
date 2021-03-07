@@ -49,5 +49,6 @@ for x (0 to ten) println(x);
 
 - Autocasting for variables
 - Curly braces can be omitted for loops and conditionals if only one statement is present (excluding functions).
+- Fields (although nothing else will be generated if you use fields (Cause yet to be known). For more info refer [this issue](https://github.com/Cylvre-Language/Cylvre/issues/39).)
 
 **_Comments haven't been added yet._**
