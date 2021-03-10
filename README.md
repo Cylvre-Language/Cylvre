@@ -6,13 +6,9 @@
 
 # Cylvre - The JVM language
 
-<p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="auto"></img></p>
+**_CYLVRE IS NOW UNMAINTAINED. THE REASON BEING THAT EVERY FIX INTRODUCED WILL CAUSE MORE FIXES THAT HINDER OTHER FIXES (MEANING NOT MUCH PROGRESS IS DONE). A BETTER VERSION OF IT, [CRYPT](https://github.com/Crypt-Language/Crypt) IS BEING CURRENTLY WORKED ON. CRYPT WILL RECYCLE MOST OF CYLVRE'S SYNTAX. SORRY TO ALL CYLVRE USERS/TESTERS._**
 
-[![Gitter](https://badges.gitter.im/Cylvre/community.svg)](https://gitter.im/Cylvre/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-![](https://img.shields.io/github/license/Cylvre-Language/Cylvre)
-![](https://img.shields.io/maintenance/yes/2021)
-![](https://www.travis-ci.com/Cylvre-Language/Cylvre.svg?branch=main)
-<!-- ![](https://img.shields.io/github/stars/Cylvre-Language/Cylvre) -->
+<p align="center"><img src="https://github.com/Cylvre-Language/Cylvre/blob/main/Logo/Cylvre_logo_large.png" alt="logo" width="1000px" height="auto"></img></p>
 
 Hi There! Welcome to Cylvre!
 
